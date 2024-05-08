@@ -9,10 +9,6 @@ import Search from './Search';
 import Cart from './Cart';
 
 export function App() {
-  function demo(){
-    alert("Clicked")
-  }
- 
   return (
     <div>
      <BrowserRouter>
