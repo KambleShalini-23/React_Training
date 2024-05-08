@@ -10,6 +10,7 @@ import Cart from './Cart';
 
 export function App() {
   return (
+    
     <div>
      <BrowserRouter>
      <Navbar />
