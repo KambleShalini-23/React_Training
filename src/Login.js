@@ -19,6 +19,8 @@ function Login()
         }).then((response)=> {
             console.log("Response",response)
             localStorage.token=response.data.token
+            localStorage.setItem("name",response.data.name)
+            localStorage.setItem("email",response.data.email)
             navigate('/')
         },(error)=>{
             console.log("Error",error)

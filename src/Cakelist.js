@@ -17,7 +17,7 @@ export default function Cakelist({ searchQuery }) {
         }).then((response) => {
             console.log("Response", response.data.data);
             if (searchQuery && searchQuery !== "undefined") {
-                setCakes(response.data.data.filter(cake => cake.name && cake.name.includes(searchQuery)));
+                setCakes(response.data.data.filter(cake => cake.name && cake.name.toLowerCase().includes(searchQuery.toLowerCase())));
             } else {
                 setCakes(response.data.data);
             }
